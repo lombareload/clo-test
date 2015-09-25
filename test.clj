@@ -36,6 +36,9 @@
 (reduce str (take 4 (range)))
 ;; "0123"
 
+(reduce str "init-" '(1 2 3 4))
+;; "init-1234"
+
 ((complement empty?) [])
 ;; false
 
