@@ -88,3 +88,9 @@
 (dotimes [i 6] (print i))
 ;; stdout = 012345
 
+(def sb (doto (StringBuffer. "Who ")
+          (.append "are ")
+          (.append "you?")))
+(.toString sb)
+;; "Who are you?"
+
